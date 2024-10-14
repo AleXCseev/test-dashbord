@@ -1,0 +1,48 @@
+@import "sidebar.css";
+@import "main.css";
+
+:root {
+  --main-bg-color: #fafbff;
+  --white-color: #fff;
+  --black-color: #000;
+  --nav-main-color: #9197b3;
+  --nav-grey-color: #757575;
+  --blue-color: #5932ea;
+  --info-color: #16c098;
+  --main-grey-color: #b5b7c0;
+  --main-text-color: #292d32;
+
+  --active-text-color: #008767;
+  --active-border-color: #00b087;
+  --active-bg-color: rgba(22, 192, 152, 0.38);
+
+  --inactive-text-color: #df0404;
+  --inactive-border-color: #df0404;
+  --inactive-bg-color: #ffc5c5;;
+
+  --divider-color: #eee;
+
+  --pagination-bg-color: #f5f5f5;
+  --pagination-text-color: #404b52;
+
+  --search-bg-color: #f9fbff;
+
+  --main-box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+
+}
+
+*,
+*:after,
+*:before,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
