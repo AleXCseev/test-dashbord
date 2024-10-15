@@ -1,35 +1,35 @@
-aside 
-    .sidebar-header
+aside.sidebar
+    a.sidebar-header(href="#")
         include svg/main-logo.pug
         h2.sidebar-header__title Dashboard 
-        span.sidebar-header__version v.01
+            span.sidebar-header__version v.01
     ul.sidebar-nav
         li.sidebar-nav__item 
-            button.sidebar-nav__btn 
+            button.sidebar-nav__btn(type="button") 
                 include svg/icon-1.pug
                 span.sidebar-nav__text Dashboard
         li.sidebar-nav__item 
-            button.sidebar-nav__btn 
+            button.sidebar-nav__btn(type="button")  
                 include svg/icon-2.pug
                 span.sidebar-nav__text Product 
                 include svg/nav-arrow.pug
         li.sidebar-nav__item 
-            button.sidebar-nav__btn 
+            button.sidebar-nav__btn.sidebar-nav__btn_active(type="button")  
                 include svg/icon-3.pug
                 span.sidebar-nav__text Customers
                 include svg/nav-arrow.pug
         li.sidebar-nav__item 
-            button.sidebar-nav__btn 
+            button.sidebar-nav__btn(type="button")  
                 include svg/icon-4.pug
                 span.sidebar-nav__text Income
                 include svg/nav-arrow.pug
         li.sidebar-nav__item 
-            button.sidebar-nav__btn 
+            button.sidebar-nav__btn(type="button")  
                 include svg/icon-5.pug
                 span.sidebar-nav__text Promote
                 include svg/nav-arrow.pug
         li.sidebar-nav__item 
-            button.sidebar-nav__btn 
+            button.sidebar-nav__btn(type="button")  
                 include svg/icon-6.pug
                 span.sidebar-nav__text Help
                 include svg/nav-arrow.pug
