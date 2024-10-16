@@ -20,7 +20,7 @@ module.exports = {
     // Generating HTML
     new HtmlWebpackPlugin({ template: 'pug/_index.pug', filename: 'index.html' }),
     new HtmlWebpackPugPlugin(),
-    new MiniCssExtractPlugin({ filename: 'style.css' }), // Generating CSS
+    new MiniCssExtractPlugin({ filename: 'css/style.css' }), // Generating CSS
     new CopyWebpackPlugin([{ from: 'img', to: 'img' }]), // Copy images
     // new CopyWebpackPlugin([{ from: 'font', to: 'font' }]) // Copy fonts
   ],
