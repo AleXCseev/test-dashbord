@@ -1,5 +1,3 @@
-@import "sidebar.css";
-@import "main.css";
 
 :root {
   --main-bg-color: #fafbff;
@@ -70,3 +68,6 @@ body {
   opacity: 1; 
   transition: 1s ease;
 }
+
+@import "sidebar.css";
+@import "main.css";
