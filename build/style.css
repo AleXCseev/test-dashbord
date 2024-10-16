@@ -10,6 +10,14 @@
     flex-shrink: 0;
 }
 
+.open-sidebar {
+    display: none;
+}
+
+.close-sidebar {
+    display: none;
+} 
+
 .sidebar-header {
     display: flex;
     justify-content: flex-start;
@@ -119,14 +127,6 @@
     letter-spacing: 0.01em;
     color: var(--nav-grey-color);
 }
-
-.open-sidebar {
-    display: none;
-}
-
-.close-sidebar {
-    display: none;
-} 
 
 @media (max-width: 1280px) {
     .sidebar {
