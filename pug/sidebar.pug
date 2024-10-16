@@ -1,4 +1,6 @@
 aside.sidebar
+    button.sidebar-btn.close-sidebar(type="button")
+        img(src="img/close.png", alt="close icon")
     a.sidebar-header(href="#")
         include svg/main-logo.pug
         h2.sidebar-header__title Dashboard 
@@ -18,7 +20,7 @@ aside.sidebar
                 include svg/icon-3.pug
                 span.sidebar-nav__text Customers
                 include svg/nav-arrow.pug
-        li.sidebar-nav__item 
+        li.sidebar-nav__item
             button.sidebar-nav__btn(type="button")  
                 include svg/icon-4.pug
                 span.sidebar-nav__text Income
@@ -28,7 +30,7 @@ aside.sidebar
                 include svg/icon-5.pug
                 span.sidebar-nav__text Promote
                 include svg/nav-arrow.pug
-        li.sidebar-nav__item 
+        li.sidebar-nav__item
             button.sidebar-nav__btn(type="button")  
                 include svg/icon-6.pug
                 span.sidebar-nav__text Help

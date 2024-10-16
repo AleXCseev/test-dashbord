@@ -104,7 +104,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./css/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ../css/_style.css */ \"./css/_style.css\");\r\n\n\n//# sourceURL=webpack:///./js/_script.js?");
+eval("__webpack_require__(/*! ../css/_style.css */ \"./css/_style.css\");\r\n\r\nconst sidebar = document.querySelector(\".sidebar\");\r\nconst openSidebarBtn = document.querySelector(\".open-sidebar\");\r\nconst closeSidebarBtn = document.querySelector(\".close-sidebar\")\r\nconst sidebarNavBtn = document.querySelectorAll(\".sidebar-nav__btn\")\r\n\r\nfunction openSidebar() {\r\n    sidebar.classList.add(\"sidebar_open\")\r\n}\r\n\r\nfunction closeSidebar() {\r\n    sidebar.classList.remove(\"sidebar_open\")\r\n}\r\n\r\nopenSidebarBtn.addEventListener(\"click\", openSidebar)\r\n\r\ncloseSidebarBtn.addEventListener(\"click\", closeSidebar)\r\n\r\nsidebarNavBtn.forEach((el) => el.addEventListener(\"click\", closeSidebar))\r\n\r\nfunction onEntry(entry) { \r\n    entry.forEach(change => { \r\n      if (change.isIntersecting) { \r\n       change.target.classList.add('element-show'); \r\n       \r\n      } \r\n    }); \r\n} \r\nlet options = { threshold: [0.5] }; \r\nlet observer = new IntersectionObserver(onEntry, options); \r\nlet elements = document.querySelectorAll('.element-animation'); \r\n\r\nlet count = 0\r\n\r\nsetInterval(function() {\r\n    if(elements.length > count)\r\n    observer.observe(elements[count])\r\n    count++\r\n}, 50)\r\n\n\n//# sourceURL=webpack:///./js/_script.js?");
 
 /***/ }),
 
@@ -778,7 +778,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/konstantin/Downloads/pet/test/node_modules/webpack-dev-server/client/index.js?http://localhost:4000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:4000\");\nmodule.exports = __webpack_require__(/*! ./js/_script.js */\"./js/_script.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
+eval("__webpack_require__(/*! C:\\Users\\константин\\Desktop\\test-dashbord\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:4000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:4000\");\nmodule.exports = __webpack_require__(/*! ./js/_script.js */\"./js/_script.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
 
 /***/ }),
 

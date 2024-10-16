@@ -57,3 +57,16 @@ body {
   justify-content: flex-start;
   align-items: stretch;
 }
+
+.element-animation { 
+  transform: translateY(20px); 
+  opacity: 0; 
+  position: relative; 
+} 
+
+.element-animation.element-show { 
+  position: relative; 
+  transform: translateY(0px); 
+  opacity: 1; 
+  transition: 1s ease;
+}

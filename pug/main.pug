@@ -1,4 +1,6 @@
 main.main
+    button.sidebar-btn.open-sidebar(type="button")
+        img(src="img/burger-bar.png", alt="burger icon")
     h2.main-title Hello Evano 👋🏼,
     .card
         .card-header 
@@ -8,80 +10,81 @@ main.main
             .card-search 
                 img.card-search__icon(src="img/search.png")
                 input.card-search__input(placeholder="Search")
-        table.card-table
-            thead.card-table__header
-                tr.card-table__row
-                    th Customer Name
-                    th Company
-                    th Phone Number
-                    th Email
-                    th Country
-                    th Status
-            tbody.card-table__body
-                tr.card-table__row
-                    td Jane Cooper
-                    td Microsoft
-                    td (225) 555-0118
-                    td jane@microsoft.com
-                    td United States
-                    td 
-                        p.card-table__status Active
-                tr.card-table__row
-                    td Floyd Miles
-                    td Yahoo
-                    td (205) 555-0100
-                    td floyd@yahoo.com
-                    td Kiribati
-                    td 
-                        p.card-table__status.card-table__status_inactive Inactive
-                tr.card-table__row
-                    td Ronald Richards
-                    td Adobe
-                    td (302) 555-0107
-                    td ronald@adobe.com
-                    td Israel
-                    td 
-                        p.card-table__status.card-table__status_inactive Inactive
-                tr.card-table__row
-                    td Marvin McKinney
-                    td Tesla
-                    td (252) 555-0126
-                    td marvin@tesla.com
-                    td Iran
-                    td 
-                        p.card-table__status Active 
-                tr.card-table__row
-                    td Jerome Bell
-                    td Google
-                    td (629) 555-0129
-                    td jerome@google.com
-                    td Réunion
-                    td 
-                        p.card-table__status Active
-                tr.card-table__row
-                    td Kathryn Murphy
-                    td Microsoft
-                    td (406) 555-0120
-                    td kathryn@microsoft.com
-                    td Curaçao
-                    td 
-                        p.card-table__status Active
-                tr.card-table__row
-                    td Jacob Jones
-                    td Yahoo
-                    td (208) 555-0112
-                    td jacob@yahoo.com
-                    td Brazil
-                    td 
-                        p.card-table__status Active
-                tr.card-table__row
-                    td Kristin Watson
-                    td Facebook
-                    td (704) 555-0127
-                    td kristin@facebook.com
-                    td Åland Islands
-                    td 
-                        p.card-table__status.card-table__status_inactive Inactive
+        .table-wrapper
+            table.card-table
+                thead.card-table__header
+                    tr.card-table__row.element-animation
+                        th Customer Name
+                        th Company
+                        th Phone Number
+                        th Email
+                        th Country
+                        th Status
+                tbody.card-table__body
+                    tr.card-table__row.element-animation
+                        td Jane Cooper
+                        td Microsoft
+                        td (225) 555-0118
+                        td jane@microsoft.com
+                        td United States
+                        td 
+                            p.card-table__status Active
+                    tr.card-table__row.element-animation
+                        td Floyd Miles
+                        td Yahoo
+                        td (205) 555-0100
+                        td floyd@yahoo.com
+                        td Kiribati
+                        td 
+                            p.card-table__status.card-table__status_inactive Inactive
+                    tr.card-table__row.element-animation
+                        td Ronald Richards
+                        td Adobe
+                        td (302) 555-0107
+                        td ronald@adobe.com
+                        td Israel
+                        td 
+                            p.card-table__status.card-table__status_inactive Inactive
+                    tr.card-table__row.element-animation
+                        td Marvin McKinney
+                        td Tesla
+                        td (252) 555-0126
+                        td marvin@tesla.com
+                        td Iran
+                        td 
+                            p.card-table__status Active 
+                    tr.card-table__row.element-animation
+                        td Jerome Bell
+                        td Google
+                        td (629) 555-0129
+                        td jerome@google.com
+                        td Réunion
+                        td 
+                            p.card-table__status Active
+                    tr.card-table__row.element-animation
+                        td Kathryn Murphy
+                        td Microsoft
+                        td (406) 555-0120
+                        td kathryn@microsoft.com
+                        td Curaçao
+                        td 
+                            p.card-table__status Active
+                    tr.card-table__row.element-animation
+                        td Jacob Jones
+                        td Yahoo
+                        td (208) 555-0112
+                        td jacob@yahoo.com
+                        td Brazil
+                        td 
+                            p.card-table__status Active
+                    tr.card-table__row.element-animation
+                        td Kristin Watson
+                        td Facebook
+                        td (704) 555-0127
+                        td kristin@facebook.com
+                        td Åland Islands
+                        td 
+                            p.card-table__status.card-table__status_inactive Inactive
         .card-footer 
             p.card-footer__info Showing data 1 to 8 of  256K entries
             .card-pagination 
@@ -89,7 +92,7 @@ main.main
                     li.card-pagination__item
                         a.card-pagination__link.card-pagination__link_prev(href="#") 
                             img.card-pagination__icon(src="img/pagination-arrow.png" alt="arrow")
-                    li.card-pagination__item
+                    li.card-pagination__item.card-pagination__item_active
                         a.card-pagination__link(href="#") 1
                     li.card-pagination__item
                         a.card-pagination__link(href="#") 2
